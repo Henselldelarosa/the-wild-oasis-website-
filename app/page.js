@@ -1,8 +1,13 @@
 import React from 'react'
-
+import Link from 'next/link'
+import Navigation from './components/Navigation'
 const Page = () => {
   return (
-    <h1>Hello World</h1>
+  <div>
+      <h1>The Wild Oasis. Welcome to paradise.</h1>
+
+      <Link href="/cabins">Explore Luxury Cabins</Link>
+  </div>
   )
 }
 
