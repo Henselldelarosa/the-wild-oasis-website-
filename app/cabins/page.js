@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import Counter from '../_components/Counter'
 const  Page = async () => {
   const res = await fetch('http://jsonplaceholder.typicode.com/users')
 
@@ -17,6 +17,8 @@ const  Page = async () => {
       <li key={user.id}>{user.name}</li>
       ))}
       </ul>
+
+      <Counter users={data} />
     </div>
   )
 }
